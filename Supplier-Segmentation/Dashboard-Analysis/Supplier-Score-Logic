@@ -1,0 +1,15 @@
+Supplier_Score Score = 
+SWITCH (
+    TRUE(),
+    'MasterScorecard'[Importance] <= 2.5 &&
+    'MasterScorecard'[Complexity] < 2.5, 1,
+
+    'MasterScorecard'[Importance] <= 2.5 &&
+    'MasterScorecard'[Complexity] > 2.5, 2,
+
+    'MasterScorecard'[Importance] > 2.5 &&
+    'MasterScorecard'[Complexity] <= 2.5, 3,
+
+    'MasterScorecard'[Importance] > 2.5 &&
+    'MasterScorecard'[Complexity] > 2.5, 4
+)
