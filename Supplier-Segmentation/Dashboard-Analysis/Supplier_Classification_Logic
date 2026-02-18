@@ -1,0 +1,10 @@
+Supplier Classification = 
+VAR AvgScore = [Average Supplier Score]
+RETURN
+SWITCH (
+    TRUE(),
+    AvgScore < 1.75, "Routine Supplier",
+    AvgScore < 2.5, "Bottleneck Supplier",
+    AvgScore < 3.25, "Leverage Supplier",
+    "Critical Supplier"
+)
