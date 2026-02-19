@@ -54,7 +54,7 @@ This SQL layer creates the dataset used in Power BI.
 
 ---
 
-### `sourcing_matrix_dashboard.png`
+### `Supplier_Sourcing_Matrix.png`
 
 Screenshot of the Power BI sourcing matrix visualization.
 
